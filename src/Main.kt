@@ -34,8 +34,8 @@ class ProxyProteccion(private val BDReal: AccesoBDD) : AccesoBDD{
 }
 
 fun main() {
-    val BDReal = BasedeDatos()
-    val proxy = ProxyProteccion(BDReal)
+    val BD = BasedeDatos()
+    val proxy = ProxyProteccion(BD)
 
     val usuarioNormal = "invitado"
     val usuarioAdmin = "admin"
